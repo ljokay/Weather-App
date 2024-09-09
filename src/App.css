@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* All */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/* Classes */
+.weatherTile {
+    background-color: #eee2d2;
+    border: 2px solid #333; /* Dark border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; 
+    min-height: 100vh;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+    width: 200px; 
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item {
+    padding: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Elements */
+ul {
+    list-style-type: none;
+}
+h2 {
+    text-align: center;
+}
+body {
+    padding: none;
+    margin: none;
+}
+/* Components */
+/* Styles for the NavBar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
   }
-}
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
