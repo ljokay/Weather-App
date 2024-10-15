@@ -91,7 +91,7 @@ const WeatherForecast = () => {
   };
   return (
     <div className="container">
-      <img className="logo" src="/Images/weather.png" alt="weather"></img>
+      <img className="logo" src="./images/myImage.png" alt="weather"></img>
       <input
         className="center"
         type="text"
