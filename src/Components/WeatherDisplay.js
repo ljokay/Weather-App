@@ -91,7 +91,7 @@ const WeatherForecast = () => {
   };
   return (
     <div className="container">
-      <img className="logo" src="https://ljokay.github.io/Weather-App/Images/weather.png" alt="weather"></img>
+      <img className="logo" src={`${process.env.PUBLIC_URL}/Images/weather.png`} alt="Weather Icon" />
       <input
         className="center"
         type="text"
